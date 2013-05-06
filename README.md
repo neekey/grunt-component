@@ -116,5 +116,7 @@ This can of course also be combined with the `cwd` option.
 
 ## Release History
 
+* 2013-05-06   v0.1.3   Locally installed component(1) (thanks to @bergie)
+* 2013-03-26   v0.1.2   component(1) bump
 * 2013-03-07   v0.1.1   Fixed bad dependency version string
 * 2013-03-07   v0.1.0   Initial release
