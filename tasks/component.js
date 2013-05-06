@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         action: 'build',
         args: {}
       }),
-      cmd = path.resolve(__dirname, '../node_modules/.bin/component'),
+      cmdPath = path.resolve(__dirname, '../node_modules/.bin'),
+      cmd = path.join(cmdPath, process.platform === 'win32' ? 'component.cmd' : 'component'),
       processOptions = {
         env: process.env,
         cwd: path.resolve(options.cwd)
