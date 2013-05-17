@@ -3,6 +3,10 @@
 
 > Wrapper around [component(1)](https://github.com/component/component)
 
+**Note 1:** it differs from [grunt-component-build](https://github.com/anthonyshort/grunt-component-build) in the way that it allows you to execute *all* component(1) actions and not only the build step. If that is all you need, grunt-component-plugin provides more options.
+
+**Note 2:** although not tried out, the same results can probably be accomplished with [grunt-shell](https://github.com/sindresorhus/grunt-shell).
+
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
 
