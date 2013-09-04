@@ -28,14 +28,14 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-watch": "~0.3.1",
-    "grunt": "~0.4.0"
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": "~0.4.1"
   },
   "keywords": [
     "gruntplugin",
@@ -43,7 +43,7 @@
     "grunt"
   ],
   "dependencies": {
-    "grunt-lib-contrib": "0.5.x",
-    "component": "0.16.x"
+    "grunt-lib-contrib": "~0.5.3",
+    "component": "~0.16.8"
   }
 }
