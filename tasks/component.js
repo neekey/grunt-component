@@ -35,7 +35,11 @@ module.exports = function(grunt) {
     options.args = helpers.optsToArgs(options.args);
 
     // action is first parameter
-    options.args.unshift(options.action);
+    if (options && Object.prototype.toString.call(options.action) == '[object Array]') {
+      options.args = options.action.concat(options.args);
+    } else {
+      options.args.unshift(options.action);
+    }
 
     grunt.log.writeln('    # ' + processOptions.cwd + ' >');
     grunt.log.writeln('    ' + cmd + ' ' + options.args.join(' '));
