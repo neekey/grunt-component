@@ -58,6 +58,19 @@ exports.component = {
 
     test.equal(actual, expected, 'no options');
 
+     test.done();
+  },
+  convert: function(test) {
+    test.expect(1);
+
+    var actual,
+      expected;
+
+    actual = normalize(grunt.file.read('test/fixtures/convert/template.js'));
+    expected = normalize(grunt.file.read('test/expected/template.js'));
+
+    test.equal(actual, expected, 'no options');
+
     test.done();
   }
 };
