@@ -12,7 +12,7 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     clean: {
-      tests: ['tmp', 'test/fixtures/dependency/components']
+      tests: ['tmp', 'test/fixtures/dependency/components', 'test/fixtures/convert/*.js']
     },
     jshint: {
       grunt: ['*.js'],
@@ -51,6 +51,12 @@ module.exports = function (grunt) {
             out: '../../../tmp',
             name: 'dependency'
           }
+        }
+      },
+      'convert': {
+        options: {
+          cwd: 'test/fixtures/convert',
+          action: ['convert', 'template.html']
         }
       }
     },
