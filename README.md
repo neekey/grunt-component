@@ -1,11 +1,27 @@
-[![Build Status](https://travis-ci.org/smhg/grunt-component.png?branch=master)](https://travis-ci.org/smhg/grunt-component)
-# grunt-component
+_IMPORTANT: this module has been deprecated_
+
+This task had no benefits over using an `exec` wrapper like [grunt-shell](https://npmjs.org/package/grunt-shell) or [grunt-exec](https://npmjs.org/package/grunt-exec) and has been **deprecated**.
+
+```javascript
+// Example task config using grunt-shell
+// ...
+shell: {
+  command: './node_modules/.bin/component build'
+  options: {
+    execOptions: {
+      cwd: 'some/path'
+    }
+  }
+}
+// ...
+```
+
+~~grunt-component~~
+-------------------
 
 > Wrapper around [component(1)](https://github.com/component/component)
 
-**Note 1:** it differs from [grunt-component-build](https://github.com/anthonyshort/grunt-component-build) in the way that it allows you to execute *all* component(1) actions and not only the build step. If that is all you need, grunt-component-plugin provides more options.
-
-**Note 2:** although not tried out, the same results can probably be accomplished with [grunt-shell](https://github.com/sindresorhus/grunt-shell).
+**Note:** it differs from [grunt-component-build](https://github.com/anthonyshort/grunt-component-build) in the way that it allows you to execute *all* component(1) actions and not only the build step. If that is all you need, grunt-component-plugin provides more options.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
